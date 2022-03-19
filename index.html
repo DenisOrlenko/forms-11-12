@@ -491,6 +491,7 @@
             placeholder="Введите текст"></textarea>
         </div>
 
+        <!-- I способ с помощью background-image url("") -->
         <div class="agree-checkbox-group">
           <input class="agree-checkbox" type="checkbox" name="agree-checkbox" id="agree-checkbox">
           <!-- <span class="agree-checkbox-icon"></span> -->
@@ -499,8 +500,23 @@
           <pre> </pre>
           <a href="" class="agree-link link">Условия договора</a>
         </div>
-        <div class="send-modal-button-group">
+        <!-- <div class="send-modal-button-group">
           <button class="send-modal-button" type="submit">Отправить</button>
+        </div> -->
+
+
+        <!-- II способ с помощью svg-sprite!! -->
+        <div class="agree-checkbox-group">
+          <input class="agree-checkbox" type="checkbox" name="agree-checkbox-new" id="agree-checkbox-new">
+          <label class="agree-checkbox-label" for="agree-checkbox-new">
+            <span class="agree-icon-checkbox">
+              <svg class="agree-icon" width="16" height="15">
+                <use href="./images/svg/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>Соглашаюсь с рассылкой и принимаю
+            <pre> </pre>
+            <a href="" class="agree-link link">Условия договора</a>
+          </label>
         </div>
       </form>
     </div>
